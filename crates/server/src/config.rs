@@ -93,6 +93,10 @@ pub enum HostInputs {
         max_map_count: usize,
         mem_total: u64,
     },
+    // Symmetric to `Linux`: constructed in production only on
+    // non-Linux, in tests on every platform. Silence the bin
+    // target's dead-code false positive on Linux builds.
+    #[cfg_attr(target_os = "linux", allow(dead_code))]
     Fallback,
 }
 
