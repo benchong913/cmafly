@@ -5,7 +5,7 @@
 [![Edition](https://img.shields.io/badge/edition-2024-orange.svg)](./Cargo.toml)
 [![Toolchain](https://img.shields.io/badge/rust-stable-brightgreen.svg)](./rust-toolchain.toml)
 
-On-demand HLS / CMAF origin for VOD MP4 archives — **no segment files on disk**.
+> On-demand HLS / CMAF origin for VOD MP4 archives — **no segment files on disk**.
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md)
 

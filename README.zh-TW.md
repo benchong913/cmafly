@@ -5,7 +5,7 @@
 [![Edition](https://img.shields.io/badge/edition-2024-orange.svg)](./Cargo.toml)
 [![Toolchain](https://img.shields.io/badge/rust-stable-brightgreen.svg)](./rust-toolchain.toml)
 
-面向 VOD MP4 媒體庫的隨選 HLS / CMAF 源站 — **磁碟上不落任何切片檔案**。
+> 面向 VOD MP4 媒體庫的隨選 HLS / CMAF 源站 — **磁碟上不落任何切片檔案**。
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md)
 
