@@ -1,0 +1,20 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/packager",
+    "crates/indexer",
+    "crates/server",
+]
+
+[workspace.package]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = "On-demand HLS / CMAF origin for VOD MP4 archives — segments assembled per request, never written to disk"
+publish = false
+
+[workspace.lints.rust]
+unsafe_op_in_unsafe_fn = "warn"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }

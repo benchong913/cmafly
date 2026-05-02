@@ -1,0 +1,30 @@
+[package]
+name = "cmafly-serve"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+description.workspace = true
+readme.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "cmafly-serve"
+path = "src/main.rs"
+
+[dependencies]
+cmafly = { path = "../packager" }
+tokio = { version = "1", features = ["rt-multi-thread", "net", "macros", "sync", "time"] }
+axum = "0.7"
+# `http-body` and `bytes` are transitive deps of axum; declared here so
+# we can `impl http_body::Body` for the admission-permit-owning response
+# body (the permit must release with response-stream completion, not
+# handler return).
+http-body = "1"
+bytes = "1"
+lru = "0.12"
+anyhow = "1"
+memmap2 = "0.9"
+clap = { version = "4", features = ["derive"] }

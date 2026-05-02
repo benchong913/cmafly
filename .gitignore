@@ -1,0 +1,20 @@
+/target/
+**/target/
+.DS_Store
+
+# Test fixtures and binary media (per SPEC §Boundaries; never commit > 1 MB binaries)
+*.mp4
+*.mov
+*.m4v
+*.m4s
+*.idx
+tests/fixtures/
+
+# Internal planning docs — kept out of the public repo
+tasks/
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
