@@ -7,7 +7,7 @@
 
 面向 VOD MP4 媒体库的按需 HLS / CMAF 源站 — **磁盘上不落任何切片文件**。
 
-[English README](./README.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md)
 
 一套 Rust 工具链,直接从现有 `.mp4` 媒体库对外提供 CMAF(分片 MP4)HLS 服务。
 离线索引器对每个 MP4 扫描一次,产出一份精简的 `.idx` 文件(2 小时视频约 13 MB),
@@ -148,6 +148,7 @@ cmafly/
 ├── rust-toolchain.toml     stable 通道锁定
 ├── README.md               英文 README(默认)
 ├── README.zh-CN.md         本文件
+├── README.zh-TW.md         繁体中文翻译
 ├── LICENSE-MIT
 ├── LICENSE-APACHE
 ├── crates/

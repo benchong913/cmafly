@@ -7,7 +7,7 @@
 
 On-demand HLS / CMAF origin for VOD MP4 archives — **no segment files on disk**.
 
-[中文 README](./README.zh-CN.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md)
 
 A Rust toolkit that serves CMAF (fragmented MP4) HLS straight from your existing
 `.mp4` archives. An offline indexer walks each MP4 once and writes a compact
@@ -157,7 +157,8 @@ cmafly/
 ├── Cargo.toml              workspace root
 ├── rust-toolchain.toml     stable channel pin
 ├── README.md               this file
-├── README.zh-CN.md         Chinese translation
+├── README.zh-CN.md         Simplified Chinese translation
+├── README.zh-TW.md         Traditional Chinese translation
 ├── LICENSE-MIT
 ├── LICENSE-APACHE
 ├── crates/
